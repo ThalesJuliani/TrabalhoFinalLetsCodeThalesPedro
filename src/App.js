@@ -1,10 +1,17 @@
-
+import { useState } from "react";
+import { TextInput } from "./Components/TextInput";
 
 function App() {
+
+const [nome, setName] = useState ('Andréia')
+
   return (
     
-<p> Olá Mundo </p>
-
+    <div>
+     <TextInput value={nome} onChangeValue={setName} />
+   
+    <p> Olá Mundo </p>  
+    </div>
   );
 }
 
