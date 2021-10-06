@@ -9,6 +9,7 @@ const [nome, setName] = useState ('Andréia')
     
     <div>
      <TextInput value={nome} onChangeValue={setName} />
+     <a href="http: www.google.com" target="_blank">Link</a>
    
     <p> Olá Mundo </p>  
     </div>
