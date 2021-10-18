@@ -3,7 +3,7 @@ import { TextInput } from "./Components/TextInput";
 
 function App() {
 
-const [nome, setName] = useState ('Andréia')
+const [nome, setName] = useState ('Andréia e Thales')
 
   return (
     
