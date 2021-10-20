@@ -1,4 +1,7 @@
 Rever aula tabelas (Table, Cabeçalho Tabelha , Linha Tabela e Células)
+.map para cada aluno um table row / linha da tabela x preencher dentro dessa linha cada campo
+Fazer base do funcional e depois enbelezar
+Manejo de estados e parte assincrona
 
 
 O sistema será desenvolvido conforme necessidade do cliente " Escola de Estética Av. Paulista" que precisa de um ambiente de gerenciamento de presença em sala de aula de seus alunos.
@@ -15,7 +18,6 @@ Exigências:
 Botão de Login altera State (Professor) + Spinner para simular requisição com 3s muda state = aparece algo a mais na tela
 
 4 - Ambiente/Tela (Tela 2), principal com os seguintes campos:
-
     a) Nome do Curso (dirteto no App.js - parágrafo personalizado)
     b) Nome do Professor (dirteto no App.js - parágrafo personalizado)
     c) Data (componet "Seleção")
