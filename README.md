@@ -24,7 +24,7 @@ Usar UseEffect para evitar Loopings infinitos
 Navegação utilizar REact DOM
 Uso do Hook use Context
 Estar GITHub (ok)
-Hospedar o projeto em algum lugar ()
+Hospedar o projeto em algum lugar (.github.io)
 
 
 
