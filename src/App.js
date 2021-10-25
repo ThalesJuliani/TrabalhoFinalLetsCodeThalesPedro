@@ -1,32 +1,36 @@
 import { useState } from "react";
 import { TextInput } from "./Components/TextInput";
 import { Input } from "./Components/Input";
-import {CanDrive} from "./Components/CanDrive"
+import { CursoEscolher} from "./Components/CursoEscolher"
 
 
 
 function App() {
 
-const [nome, setName] = useState ('Andréia e Thales e Sophie')
-const [value, setValue] = useState ('Vancouver')
-const [age, setAge] = useState ('21')
+const [nome, setName] = useState ('Unidade São Paulo')
+const [value, setValue] = useState ('Insira Curso Escolhido')
+const [age, setAge] = useState ('3')
 
 
 
   return (
     
     <div>
-     <TextInput value={nome} onChangeValue={setName} />
-     
-     <Input type="text" value={value} onChangeValue={setValue} />
+      <p className='titulo'> Escola de Estética Av. Paulista </p>  
+      <p className='titulo2'> Invista em seu Futuro </p>  
+      <p className='titulo3'> Educação de Qualidade </p>  
+      <p className='Unidade'>  <TextInput value={nome} onChangeValue={setName} /> </p>
+      <p className='tituloCurso'> Escolha: 1- Curso Drenagem Linfática / 2 - Botox / 3 - Cursos Pós-Operatório </p>  
+      <p className='nomecurso'> <Input type="text" value={value} onChangeValue={setValue} /> </p>
+      <p className='escolhecurso'> <CursoEscolher age = {value} /> </p>
 
-     <CanDrive age = {value} />
-   
-    <p> Olá Mundo 222 </p>  
 
-    <a href="http: www.google.com" target="_blank">Link</a>
+
+    <a className='linkprotalprofessor' href="http: www.escoladeesteticaavpaulista.com.br" target="_blank">Link para Portal Profesor</a>
 
     </div>
+
+  
   );
 }
 
