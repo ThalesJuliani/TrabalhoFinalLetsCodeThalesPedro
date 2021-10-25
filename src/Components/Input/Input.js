@@ -3,6 +3,6 @@ export function Input ({type, value, onChangeValue}) {
         onChangeValue (e.target.value)
     }
      return (
-        <input className='input' type={type} value={value} handonChange={onChange} />
+        <input className='input' type={type} value={value} onChange={handonChange} />
     )
 }
