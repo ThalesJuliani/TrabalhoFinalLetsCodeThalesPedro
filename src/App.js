@@ -20,8 +20,8 @@ const [curso, setAge] = useState ('3')
       <p className='titulo2'> Invista em seu Futuro </p>  
       <p className='titulo3'> Educação de Qualidade </p>  
       <p className='Unidade'>  <TextInput value={nome} onChangeValue={setName} /> </p>
-      
-      <p className='tituloCurso'> Escolha: 1- Curso Drenagem Linfática / 2 - Botox / 3 - Curso Pós-Operatório </p>  
+
+      <p className='tituloCurso'> Escolha: 1- Curso Drenagem Linfática / 2 - Botox </p>  
       <p className='nomecurso'> <Input type="text" value={value} onChangeValue={setValue} /> </p>
       <p className='escolhecurso'> <CursoEscolher curso = {value} /> </p>
 
