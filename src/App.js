@@ -8,7 +8,7 @@ import { CursoEscolher} from "./Components/CursoEscolher"
 function App() {
 
 const [nome, setName] = useState ('Unidade São Paulo')
-const [value, setValue] = useState ('Insira Curso Escolhido')
+const [value, setValue] = useState ('Insira Curso Escolhido...')
 const [curso, setAge] = useState ('3')
 
 
