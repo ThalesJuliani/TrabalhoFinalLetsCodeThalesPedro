@@ -27,7 +27,7 @@ const [curso, setAge] = useState ('3')
 
 
 
-    <a className='linkprotalprofessor' href="http: www.escoladeesteticaavpaulista.com.br" target="_blank">Link para Portal Profesor</a>
+    <a className='linkprotalprofessor' href="http: www.escoladeesteticaavpaulista.com.br" target="_blank">Link para Portal Professor</a>
 
     </div>
 
