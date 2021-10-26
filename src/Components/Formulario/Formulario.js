@@ -1,6 +1,6 @@
-export function Formulario ({aluninhos}) {
+export function Formulario () {
 
-    const aluninhos = useState('Digite o nome do aluno')
+const [aluninhos, setAluninhos] = useState('Digite o nome do aluno')
 
 return (
     <>
@@ -13,6 +13,5 @@ return (
         />
         <p> Nomes Digitados: {aluninhos} </p>
     </>
-) 
-
+);    
 }
