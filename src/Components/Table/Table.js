@@ -1,4 +1,4 @@
-function Table({lista, colunaNome, width = 'auto', high} = 'auto') {
+function Table({list, colNames, width = 'auto', high} = 'auto') {
     return(
         <div>
             {lista.length > 0 && (
