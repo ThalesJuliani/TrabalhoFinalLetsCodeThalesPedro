@@ -1,1 +1,1 @@
-export {aluninhos} from "./Formulario"
+export { Formulario} from "./Formulario"

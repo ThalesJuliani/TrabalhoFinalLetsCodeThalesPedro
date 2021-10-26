@@ -1,8 +1,6 @@
-import React, { useState } from 'react'
-
 export function Formulario ({aluninhos}) {
 
-const [aluninhos,setAluninhos] = useState('Digite o nome do aluno')
+    const aluninhos = useState('Digite o nome do aluno')
 
 return (
     <>

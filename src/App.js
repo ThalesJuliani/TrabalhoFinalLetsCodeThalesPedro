@@ -3,6 +3,7 @@ import { TextInput } from "./Components/TextInput";
 import { Input } from "./Components/Input";
 import { CursoEscolher} from "./Components/CursoEscolher"
 import { Listagem } from "./Components/Lista";
+import { Formulario } from "./Components/Formulario";
 
 function App() {
 
@@ -10,6 +11,7 @@ const [nome, setName] = useState ('Unidade São Paulo')
 const [value, setValue] = useState ('Insira Curso Escolhido...')
 const [curso, setAge] = useState ('3')
 const [aluno, setAluno] = useState ()
+const [aluninhos, setAluninhos] = useState ('Digite o nome do aluno')
 
   return (
     <div>
@@ -23,6 +25,8 @@ const [aluno, setAluno] = useState ()
       <p className='escolhecurso'> <CursoEscolher curso = {value} /> </p>
 
       <p className= 'lista.alunos'> <Listagem aluno = {setAluno} /> </p>
+
+      <p className='formulario'> < Formulario aluninhos = {setAluninhos} />  </p>
     
     </div>
  
