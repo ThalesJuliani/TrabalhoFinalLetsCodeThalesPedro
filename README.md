@@ -37,4 +37,6 @@ Hospedar o projeto em algum lugar (.github.io)
 
 
 
+const [alunos, setAlunos] = useState(['Rodrigo, 'Dodo', 'Nina'])
 
+Caixa de Texto para escrever algum nome
