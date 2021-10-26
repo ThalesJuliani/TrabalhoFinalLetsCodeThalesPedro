@@ -1,0 +1,2 @@
+export { Listagem } from "./Lista";
+
