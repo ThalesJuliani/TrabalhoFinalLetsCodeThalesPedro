@@ -4,10 +4,12 @@ import { Input } from "./Components/Input";
 import { CursoEscolher} from "./Components/CursoEscolher";
 import { Listagem } from "./Components/Lista";
 import { Formulario } from "./Components/Formulario";
+import LedVerde from "./Components/Imgs/LedVerde.jpg"
+import LedVermelho from "./Components/Imgs/LedVermelho.jpg"
 
 function App() {
 
-const [apelido, setName] = useState ('Unidade São Paulo')
+const [unidade, setUnidade] = useState ('Unidade São Paulo')
 const [value, setValue] = useState ('Insira Curso Escolhido...')
 const [curso, setAge] = useState ('3')
 const [aluno, setAluno] = useState ()
@@ -28,15 +30,19 @@ const colNames = ["id" , "Name", "Idade" ]
         <p className='titulo2'> Invista em seu Futuro </p>  
         <p className='titulo3'> Educação de Qualidade </p>  
 
-        <p className='Unidade'>  <TextInput value={apelido} onChangeValue={setName} /> </p>
+        <p style = {{backgroundColor:'black'}} className='Unidade'>  <TextInput value={unidade} onChangeValue={setUnidade} /> </p>
 
-        <p className='tituloCurso'> Escolha: 1- Curso Drenagem Linfática / 2 - Botox </p>  
-        <p className='nomecurso'> <Input type="text" value={value} onChangeValue={setValue} /> </p>
-        <p className='escolhecurso'> <CursoEscolher curso = {value} /> </p>
+        <p style = {{backgroundColor: 'yellow'}} className='tituloCurso'> Escolha: 1- Curso Drenagem Linfática / 2 - Botox </p>  
+        <p style = {{backgroundColor: 'yellow'}} className='nomecurso'> <Input type="text" value={value} onChangeValue={setValue} /> </p>
+        <p style = {{backgroundColor: 'yellow'}} className='escolhecurso'> <CursoEscolher curso = {value} /> </p>
 
-        <p className= 'lista.alunos'> <Listagem aluno = {setAluno} /> </p>
+        <p style = {{backgroundColor: 'blue'}} className= 'lista.alunos'> <Listagem aluno = {setAluno} /> </p>
 
-        <p className='formulario'> < Formulario aluninhos = {setAluninhos} />  </p>
+        <p style = {{backgroundColor: 'grey'}}className='formulario'> < Formulario aluninhos = {setAluninhos} />  </p>
+
+        <img style = {{width: '50px'}} src={LedVerde} />
+        <img style = {{width: '80px'}} src={LedVermelho} />
+        <button > Ligar ou Desliga </button>
     </div>
    
 )

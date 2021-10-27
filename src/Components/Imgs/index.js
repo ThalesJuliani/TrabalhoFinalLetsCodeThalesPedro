@@ -1,0 +1,2 @@
+export {Imgs} from './Imgs' 
+
