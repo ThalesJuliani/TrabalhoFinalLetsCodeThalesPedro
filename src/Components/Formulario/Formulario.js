@@ -7,14 +7,15 @@
 
     return (
         <>
-            <label> Digite o nome do Aluninhos  </label>
+            <label> Professor Digite o nome do ALUNO  </label>
             <input 
             type="Text" 
             name="fnome" 
             value={aluninhos}
             onChange={(e)=>setAluninhos(e.target.value)}
             />
-            <p> Nomes Digitados: {aluninhos} </p>
+            <p> Lista de Alunos Presente: (lista abaixo professor insere no text input acima)  </p>
+            <p> {aluninhos}</p>
         </>
     );    
     }

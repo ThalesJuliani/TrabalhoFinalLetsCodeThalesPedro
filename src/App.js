@@ -3,7 +3,6 @@ import { TextInput } from "./Components/TextInput";
 import { Input } from "./Components/Input";
 import { CursoEscolher} from "./Components/CursoEscolher";
 import { Listagem } from "./Components/Lista";
-//import { Table } from "./Components/Table";
 import { Formulario } from "./Components/Formulario";
 
 function App() {
