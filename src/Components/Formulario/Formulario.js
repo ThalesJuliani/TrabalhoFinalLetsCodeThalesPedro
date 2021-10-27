@@ -14,8 +14,8 @@
             value={aluninhos}
             onChange={(e)=>setAluninhos(e.target.value)}
             />
-            <p> Lista de Alunos Presente: (lista abaixo professor insere no text input acima)  </p>
-            <p> {aluninhos}</p>
+            <p> Lista de Alunos Presente: (lista abaixo professor insere no text input acima) </p>
+            <b className="nomealuno"> {aluninhos}</b>
         </>
     );    
     }
