@@ -4,8 +4,7 @@ import { Input } from "./Components/Input";
 import { CursoEscolher} from "./Components/CursoEscolher";
 import { Listagem } from "./Components/Lista";
 import { Formulario } from "./Components/Formulario";
-import LedVerde from "./Components/Imgs/LedVerde.jpg"
-import LedVermelho from "./Components/Imgs/LedVermelho.jpg"
+import { Botao } from "./Components/Botão";
 
 function App() {
 
@@ -14,6 +13,7 @@ const [value, setValue] = useState ('Insira Curso Escolhido...')
 const [curso, setAge] = useState ('3')
 const [aluno, setAluno] = useState ()
 const [aluninhos,setAluninhos] = useState('Digite o nome do aluno')
+
 //const list e const colNames estão com as infos da tabela 2 que esta lá no class app
 const list = [
              {id: 1, name: "Thales Juliani", Idade: 41 },
@@ -21,6 +21,8 @@ const list = [
              {id: 3, name: "Tatiana Andrade", Idade: 20 },
             ]
 const colNames = ["id" , "Name", "Idade" ]
+
+const [ligado, setLigado] = useState (false)
 
 //abaixo faz ligação com a const e componete
 
@@ -40,12 +42,9 @@ const colNames = ["id" , "Name", "Idade" ]
 
         <p style = {{backgroundColor: 'grey'}}className='formulario'> < Formulario aluninhos = {setAluninhos} />  </p>
 
-        <img style = {{width: '50px'}} src={LedVerde} />
-        <img style = {{width: '80px'}} src={LedVermelho} />
-        <button > Ligar ou Desliga </button>
-    </div>
-   
-)
+        <button style = {{backgroundColor: 'Orange'}}className='Botão'> < Botao ligado={setLigado}/> </button>
+      </div>
+   )
 }
 
 

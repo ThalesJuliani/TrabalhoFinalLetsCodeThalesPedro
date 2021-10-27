@@ -1,13 +1,15 @@
 import { useState } from "react";
+import LedVerde from "./Components/Imgs/LedVerde.jpg"
+import LedVermelho from "./Components/Imgs/LedVermelho.jpg"
 
-export function Botao() {
+export function Botao(props) {
 
-  const [ligado, setLigado] = useState (false)
-
-  return (
+     return (
       <>
-        <img style = {{width: '50px'}} src={ligado?LedVerde:LedVermelho} />
-        <button onClick={()=>setLigado(!ligado)}>{ligado?'Desligar':'Ligar'} </button>
+        <img style = {{width: '50px'}} src={props.ligado?LedVerde:LedVermelho} />
+        <button onClick={()=>props.setLigado(!props.ligado)}>
+            {props.ligado?'Desligar':'Ligar'} 
+        </button>
       </>
-  );
+     );
 }
