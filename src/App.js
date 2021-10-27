@@ -4,6 +4,7 @@ import { Input } from "./Components/Input";
 import { CursoEscolher} from "./Components/CursoEscolher";
 import { Listagem } from "./Components/Lista";
 import { Table } from "./Components/Table";
+import { Formulario } from "./Components/Formulario";
 
 function App() {
 
@@ -11,15 +12,17 @@ const [apelido, setName] = useState ('Unidade São Paulo')
 const [value, setValue] = useState ('Insira Curso Escolhido...')
 const [curso, setAge] = useState ('3')
 const [aluno, setAluno] = useState ()
+const [aluninhos,setAluninhos] = useState('Digite o nome do aluno')
 //const list e const colNames estão com as infos da tabela 2 que esta lá no class app
- const list = [
-              {id: 1, name: "Thales Juliani", Idade: 41 },
-              {id: 2, name: "Pedro Andrade", Idade: 19 },
-              {id: 3, name: "Tatiana Andrade", Idade: 20 },
-              ]
- const colNames = ["id" , "Name", "Idade" ]
+const list = [
+             {id: 1, name: "Thales Juliani", Idade: 41 },
+             {id: 2, name: "Pedro Andrade", Idade: 19 },
+             {id: 3, name: "Tatiana Andrade", Idade: 20 },
+            ]
+const colNames = ["id" , "Name", "Idade" ]
 
 //abaixo faz ligação com a const e componete
+
   return (
     <div>
       <p className='titulo'> Escola de Estética Av. Paulista </p>  
@@ -34,11 +37,13 @@ const [aluno, setAluno] = useState ()
 
       <p className= 'lista.alunos'> <Listagem aluno = {setAluno} /> </p>
 
+      <p className='formulario'> < Formulario aluninhos = {setAluninhos} />  </p>
    </div>
     );
+
 //abaixo fiz um rende rno desespero tentando que tabela acima apareça na tela
- class App extends Component {
-   render () {
+class App extends Component {
+render () {
      return (
       <div className="Tabela">
         <Table list={list} colNames={colNames} />

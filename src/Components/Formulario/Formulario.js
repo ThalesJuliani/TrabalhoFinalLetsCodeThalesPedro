@@ -1,5 +1,6 @@
 
 // function origem da Tabela 1
+    import {useState } from "react";
     export function Formulario () {
 
     const [aluninhos, setAluninhos] = useState('Digite o nome do aluno')

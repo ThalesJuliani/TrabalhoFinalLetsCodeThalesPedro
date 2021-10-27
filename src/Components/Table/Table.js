@@ -1,4 +1,4 @@
-function Table({list, colNames, width = 'auto', high} = 'auto') {
+export function Table({list, colNames, width = 'auto', high} = 'auto') {
     return(
         <div>
             {lista.length > 0 && (
