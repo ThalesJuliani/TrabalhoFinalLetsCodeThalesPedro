@@ -3,7 +3,7 @@ import { TextInput } from "./Components/TextInput";
 import { Input } from "./Components/Input";
 import { CursoEscolher} from "./Components/CursoEscolher";
 import { Listagem } from "./Components/Lista";
-import { Table } from "./Components/Table";
+//import { Table } from "./Components/Table";
 import { Formulario } from "./Components/Formulario";
 
 function App() {
@@ -24,34 +24,24 @@ const colNames = ["id" , "Name", "Idade" ]
 //abaixo faz ligação com a const e componete
 
   return (
-    <div>
-      <p className='titulo'> Escola de Estética Av. Paulista </p>  
-      <p className='titulo2'> Invista em seu Futuro </p>  
-      <p className='titulo3'> Educação de Qualidade </p>  
+      <div>
+        <p className='titulo'> Escola de Estética Av. Paulista </p>  
+        <p className='titulo2'> Invista em seu Futuro </p>  
+        <p className='titulo3'> Educação de Qualidade </p>  
 
-      <p className='Unidade'>  <TextInput value={apelido} onChangeValue={setName} /> </p>
+        <p className='Unidade'>  <TextInput value={apelido} onChangeValue={setName} /> </p>
 
-      <p className='tituloCurso'> Escolha: 1- Curso Drenagem Linfática / 2 - Botox </p>  
-      <p className='nomecurso'> <Input type="text" value={value} onChangeValue={setValue} /> </p>
-      <p className='escolhecurso'> <CursoEscolher curso = {value} /> </p>
+        <p className='tituloCurso'> Escolha: 1- Curso Drenagem Linfática / 2 - Botox </p>  
+        <p className='nomecurso'> <Input type="text" value={value} onChangeValue={setValue} /> </p>
+        <p className='escolhecurso'> <CursoEscolher curso = {value} /> </p>
 
-      <p className= 'lista.alunos'> <Listagem aluno = {setAluno} /> </p>
+        <p className= 'lista.alunos'> <Listagem aluno = {setAluno} /> </p>
 
-      <p className='formulario'> < Formulario aluninhos = {setAluninhos} />  </p>
-   </div>
-    );
-
-//abaixo fiz um rende rno desespero tentando que tabela acima apareça na tela
-class App extends Component {
-render () {
-     return (
-      <div className="Tabela">
-        <Table list={list} colNames={colNames} />
-      </div>
-     )
-   }
-  }
- 
+        <p className='formulario'> < Formulario aluninhos = {setAluninhos} />  </p>
+    </div>
+   
+)
 }
+
 
 export default App;
