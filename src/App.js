@@ -5,26 +5,27 @@ import { CursoEscolher} from "./Components/CursoEscolher";
 import { Listagem } from "./Components/Lista";
 import { Table } from "./Components/Table";
 
-
 function App() {
 
 const [apelido, setName] = useState ('Unidade São Paulo')
 const [value, setValue] = useState ('Insira Curso Escolhido...')
 const [curso, setAge] = useState ('3')
 const [aluno, setAluno] = useState ()
-const list = [
-  {id: 1, name: "Thales Juliani", Idade: 41 },
-  {id: 2, name: "Pedro Andrade", Idade: 19 },
-  {id: 3, name: "Tatiana Andrade", Idade: 20 },
+//const list e const colNames estão com as infos da tabela 2 que esta lá no class app
+ const list = [
+              {id: 1, name: "Thales Juliani", Idade: 41 },
+              {id: 2, name: "Pedro Andrade", Idade: 19 },
+              {id: 3, name: "Tatiana Andrade", Idade: 20 },
               ]
-const colNames = ["id" , "Name", "Idade" ]
+ const colNames = ["id" , "Name", "Idade" ]
 
-
+//abaixo faz ligação com a const e componete
   return (
     <div>
       <p className='titulo'> Escola de Estética Av. Paulista </p>  
       <p className='titulo2'> Invista em seu Futuro </p>  
       <p className='titulo3'> Educação de Qualidade </p>  
+
       <p className='Unidade'>  <TextInput value={apelido} onChangeValue={setName} /> </p>
 
       <p className='tituloCurso'> Escolha: 1- Curso Drenagem Linfática / 2 - Botox </p>  
@@ -35,7 +36,7 @@ const colNames = ["id" , "Name", "Idade" ]
 
    </div>
     );
-
+//abaixo fiz um rende rno desespero tentando que tabela acima apareça na tela
  class App extends Component {
    render () {
      return (
