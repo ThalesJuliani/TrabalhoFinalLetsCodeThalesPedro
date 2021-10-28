@@ -1,2 +1,0 @@
-export {Imgs} from './Imgs' 
-

@@ -4,7 +4,7 @@ import { Input } from "./Components/Input";
 import { CursoEscolher} from "./Components/CursoEscolher";
 import { Listagem } from "./Components/Lista";
 import { Formulario } from "./Components/Formulario";
-import { Botao } from "./Components/Botão";
+
 
 function App() {
 
@@ -22,7 +22,7 @@ const list = [
             ]
 const colNames = ["id" , "Name", "Idade" ]
 
-const [ligado, setLigado] = useState (false)
+
 
 //abaixo faz ligação com a const e componete
 
@@ -42,7 +42,7 @@ const [ligado, setLigado] = useState (false)
 
         <p style = {{backgroundColor: 'grey'}}className='formulario'> < Formulario aluninhos = {setAluninhos} />  </p>
 
-        <button style = {{backgroundColor: 'Orange'}}className='Botão'> < Botao ligado={setLigado}/> </button>
+    
       </div>
    )
 }
