@@ -29,7 +29,7 @@ const colNames = ["id" , "Name", "Idade" ]
   return (
       <div>
         <p className='titulo'> Escola de Estética Av. Paulista </p>  
-        <p className='titulo2'> Invista em seu Futuro </p>  
+        <p className='titulo2'> Invista XXX em seu Futuro </p>  
         <p className='titulo3'> Educação de Qualidade </p>  
 
         <p style = {{backgroundColor:'black'}} className='Unidade'>  <TextInput value={unidade} onChangeValue={setUnidade} /> </p>
