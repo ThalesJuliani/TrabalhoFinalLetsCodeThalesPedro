@@ -16,7 +16,7 @@ const [aluninhos,setAluninhos] = useState('Digite o nome do aluno')
 
 //const list e const colNames estão com as infos da tabela 2 que esta lá no class app
 const list = [
-             {id: 1, name: "Thales Juliani", Idade: 41 },
+             {id: 1, name: "Thales Ferri Juliani", Idade: 41 },
              {id: 2, name: "Pedro Andrade", Idade: 19 },
              {id: 3, name: "Tatiana Andrade", Idade: 20 },
             ]
