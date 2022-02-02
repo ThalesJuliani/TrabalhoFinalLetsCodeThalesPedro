@@ -20,7 +20,7 @@ const list = [
              {id: 2, name: "Pedro S. Andrade", Idade: 19 },
              {id: 3, name: "Tatiana Andrade", Idade: 20 },
             ]
-const colNames = ["id:" , "Name:", "Age:" ]
+const colNames = ["id:" , "Name:", "Age Year:" ]
 
 
 
